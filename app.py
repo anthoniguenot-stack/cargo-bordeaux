@@ -15,8 +15,7 @@ if os.path.exists("data.json"):
     
     for item in items:
         if item.get("img"):
-    st.image(item["img"], use_container_width=True)
-
+        st.image(item["img"], use_container_width=True)
         st.subheader(f"{item['marque']} {item['modele']}")
         st.write(f"📍 {item['magasin']} ({item['type']})")
         st.markdown(f"**{item['prix_promo']} €** ~({item['prix_original']} €)~ **-{item['remise_pct']}%**")
